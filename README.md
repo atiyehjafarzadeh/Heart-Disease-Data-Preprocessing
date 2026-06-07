@@ -1,91 +1,90 @@
-# Cardiovascular Data Cleaning and Preprocessing
+🫀 Cardiovascular Data Cleaning & Machine Learning Pipeline
+📌 Project Overview
 
-## Overview
+This project covers an end-to-end pipeline for data cleaning, preprocessing, feature engineering, and machine learning modeling on a cardiovascular healthcare dataset.
 
-This project focuses on cleaning, validating, transforming, and preparing a cardiovascular healthcare dataset for machine learning applications.
+The goal is to transform raw medical data into a high-quality dataset and build a predictive model for cardiovascular disease classification.
 
-The workflow includes data quality assessment, missing value handling, categorical value normalization, feature engineering, data validation, and dataset transformation.
+📊 Dataset Description
 
-## Dataset
+The dataset includes anonymized patient records with:
 
-The dataset contains cardiovascular patient information including:
+Demographic information
+Clinical measurements
+Lifestyle factors
+Medical history
+Cardiovascular disease label
+Follow-up records
+🎯 Project Goals
+Clean and validate raw healthcare data
+Handle missing and inconsistent values
+Normalize categorical variables
+Engineer meaningful features
+Train a machine learning model
+Evaluate predictive performance
+🧹 Data Preprocessing
+Missing Value Handling
+Imputed education level
+Completed missing diabetes and smoking values
+Fixed missing or invalid visit dates
+Data Validation
+Age range validation
+Maximum heart rate correction
+Binary feature normalization (e.g., alcoholism, smoking)
+Categorical Normalization
+Standardized arrhythmia categories
+Corrected valvular disease labels
+Unified education encoding
+Date Processing
+Converted date fields to datetime format
+Computed follow-up duration
+Handled invalid date entries
+⚙️ Feature Engineering
+Follow-up duration (days)
+Ordinal encoding for ordered variables
+One-hot encoding for nominal variables
+Derived clinical indicators
+🤖 Machine Learning Model
 
-* Demographic attributes
-* Clinical measurements
-* Medical history
-* Heart disease indicators
-* Follow-up records
+A Decision Tree Classifier was trained on the cleaned dataset.
 
-## Project Objectives
+📈 Model Performance
 
-* Identify data quality issues
-* Handle missing values
-* Correct invalid and inconsistent records
-* Normalize categorical variables
-* Engineer useful features
-* Prepare data for machine learning models
+Training Accuracy: 0.9459
+Testing Accuracy: 0.9541
+📊 Classification Report
+| Class | Precision | Recall | F1-score | Support |
+| ----- | --------- | ------ | -------- | ------- |
+| 0     | 0.92      | 0.99   | 0.96     | 1993    |
+| 1     | 0.99      | 0.92   | 0.95     | 2013    |
 
-## Data Cleaning Tasks
+Overall Accuracy: 0.95
 
-### Missing Value Handling
+Macro Avg F1-score: 0.95
+Weighted Avg F1-score: 0.95
+🛠️ Technologies Used
+Python 🐍
+Pandas
+NumPy
+Matplotlib
+Scikit-learn
+Jupyter Notebook
+📤 Output
 
-* Education level imputation
-* Diabetes value completion
-* Smoking value completion
-* Visit date correction
+Final cleaned dataset:
 
-### Data Validation
-
-* Age range validation
-* Maximum heart rate validation
-* Alcoholism value correction
-* Binary feature normalization
-
-### Categorical Data Cleaning
-
-* Arrhythmia category normalization
-* Valvular disease category correction
-* Education level standardization
-
-### Date Processing
-
-* Date conversion to datetime format
-* Follow-up duration calculation
-* Invalid date handling
-
-### Feature Engineering
-
-* Follow-up day calculation
-* Ordinal encoding
-* One-hot encoding for nominal features
-
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Jupyter Notebook
-
-## Output
-
-The final cleaned dataset is exported as:
-
-```text
 final_clean.csv
-```
 
-## Workflow
+🔁 Workflow Summary
+Load raw dataset
+Exploratory Data Analysis (EDA)
+Data cleaning & validation
+Feature engineering
+Train-test split
+Train Decision Tree model
+Evaluate performance
+Export final dataset
 
-1. Load raw dataset
-2. Perform exploratory data analysis
-3. Detect data quality issues
-4. Clean and validate records
-5. Transform categorical variables
-6. Engineer new features
-7. Prepare dataset for machine learning
-8. Export cleaned dataset
+💡 Key Insight
 
-## Author
-
-Atiyeh 
+The Decision Tree model achieved high test accuracy (~95%), indicating that the preprocessing and feature engineering significantly improved the dataset quality and model learnability.

@@ -15,6 +15,7 @@ Lifestyle factors
 Medical history
 Cardiovascular disease label
 Follow-up records
+
 🎯 Project Goals
 Clean and validate raw healthcare data
 Handle missing and inconsistent values
@@ -22,6 +23,7 @@ Normalize categorical variables
 Engineer meaningful features
 Train a machine learning model
 Evaluate predictive performance
+
 🧹 Data Preprocessing
 Missing Value Handling
 Imputed education level
@@ -39,11 +41,13 @@ Date Processing
 Converted date fields to datetime format
 Computed follow-up duration
 Handled invalid date entries
+
 ⚙️ Feature Engineering
 Follow-up duration (days)
 Ordinal encoding for ordered variables
 One-hot encoding for nominal variables
 Derived clinical indicators
+
 🤖 Machine Learning Model
 
 A Decision Tree Classifier was trained on the cleaned dataset.
@@ -52,7 +56,9 @@ A Decision Tree Classifier was trained on the cleaned dataset.
 
 Training Accuracy: 0.9459
 Testing Accuracy: 0.9541
+
 📊 Classification Report
+
 | Class | Precision | Recall | F1-score | Support |
 | ----- | --------- | ------ | -------- | ------- |
 | 0     | 0.92      | 0.99   | 0.96     | 1993    |
@@ -62,6 +68,7 @@ Overall Accuracy: 0.95
 
 Macro Avg F1-score: 0.95
 Weighted Avg F1-score: 0.95
+
 🛠️ Technologies Used
 Python 🐍
 Pandas
@@ -69,6 +76,7 @@ NumPy
 Matplotlib
 Scikit-learn
 Jupyter Notebook
+
 📤 Output
 
 Final cleaned dataset:
@@ -88,3 +96,7 @@ Export final dataset
 💡 Key Insight
 
 The Decision Tree model achieved high test accuracy (~95%), indicating that the preprocessing and feature engineering significantly improved the dataset quality and model learnability.
+
+👨‍💻 Author
+
+Atiyeh 
